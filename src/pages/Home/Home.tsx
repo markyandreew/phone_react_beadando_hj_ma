@@ -2,7 +2,13 @@ import React from "react";
 import styles from "./Home.module.css";
 import placeholderImage from "../../assets/Lovepik_com-401773976-rhino-modeling-phone-p40-removebg-preview.png";
 
+
+import { useNavigate } from "react-router-dom";
+
 const Home: React.FC = () => {
+  const fedezdFelDevices=useNavigate();
+
+
   return (
     <div className={styles.homeContainer}>
       <div className={styles.homeText}>
@@ -12,7 +18,7 @@ const Home: React.FC = () => {
           intuitív, hogy mindig kéznél legyen, <br />amire szükséged van. React
           Telefonok, a technológia, <br />ami követi a ritmusodat.
         </p>
-        <button className={styles.homeButton}>Fedezd fel</button>
+        <button onClick={() => fedezdFelDevices("/Devices")} className={styles.homeButton}>Fedezd fel</button>
       </div>
       <div className={styles.homeImage}>
         <img src={placeholderImage} alt="React Telefonok" />

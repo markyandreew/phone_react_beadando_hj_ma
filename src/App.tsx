@@ -6,6 +6,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 // import Footer from "./components/Footer/Footer";
 
+
+//devices
+
+import Device from "./pages/Devices/Devices";
+import FirstDevice from "./pages/Devices/DevicesInfo/FirstDevice";
+
 function App() {
   return (
     <>
@@ -13,6 +19,12 @@ function App() {
       <Routes>
         <Route path="/Home" element={<Layout><Home/></Layout>} />
         <Route path="*" element={<Layout><NotFound /></Layout>} />
+        <Route path="Devices" element={<Layout><Device /></Layout>} />
+
+        
+        <Route path="/devices/first" element={<Layout><FirstDevice /></Layout>} />
+
+        
       </Routes>
     </BrowserRouter>
     </>

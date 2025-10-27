@@ -83,4 +83,24 @@ src/
  ├─ index.tsx                    belépési pont
  └─ index.css                    globális stílusok (body, font, alap színek)
 
+
+
+ Jenni: 10/27
+ készitettem egy Devices nevü oldalt a készülék kinálathoz- és az ahhoz tartozo css-modult. 
+ 
+
+
+Összekapcsoltam a Fedezd fel gombot a Devices-oldallal- igy kattintás után már oda irányít. 
+
+A Devices szintén összekapcsoltam a FirstDevice-el igy ha rákattintunk a telefonra akkor átírányít annak az adaira-
+Csináltam egy vissza gombot is- amivel vissza térhetünk a Device oldalra.  
+
+de ha nem tenné meg akkor: http://localhost:3000/Devices- alatt elérhető
+
+
+
+
+javaslom hogy a homePage legyen a nyito lap mármint => app.tsx és
+ Lehet hogy jobb lenne  a routes-oknak egy külön mappát létrehozni, és ott megirni minden oldal külön elérhetőségét- h ne az app.tsx-be legyen 
  -->
+

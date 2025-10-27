@@ -6,7 +6,7 @@ import { href } from "react-router-dom";
 const NavBar = () => {
   const navItems = [
     { name: "Kezdőlap", href: "#" },
-    { name: "Szolgáltatások", href: "#services" },
+    { name: "Készülékek", href: "#devices" },
     { name: "Rólunk", href: "#about" },
     { name: "Kapcsolat", href: "#contact" },
   ];
