@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./NavBar.module.css";
 import logo from "../../logo.svg"
+import { href } from "react-router-dom";
 
 const NavBar = () => {
   const navItems = [

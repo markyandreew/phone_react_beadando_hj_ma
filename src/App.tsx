@@ -1,9 +1,10 @@
 import React from "react";
-import NavBar from "./components/NavBar/NavBar";
+// import NavBar from "./components/NavBar/NavBar";
 import NotFound from "./pages/NotFound/NotFound";
 import Home from "./pages/Home/Home"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
+// import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
