@@ -27,11 +27,14 @@ const FirstDevice: React.FC = () => {
   <div>
     <button className={styles.visszaButton} onClick={() => visszaGomb("/Devices")}>vissza</button>
     
-    <header>Iphone 15 pro</header>
+    
     
     <div className={styles.infoDeviceContainer}>
+      
   {/* bal oszlop: nagy és kis képek */}
   <div className={styles.balOldal}>
+    <header className={styles.infoHeader}>Iphone 15 React</header>
+    
     <div className={styles.nagyKepContainer}>
       <img src={currentImg} alt="Nagy kep" />
     </div>
@@ -42,10 +45,18 @@ const FirstDevice: React.FC = () => {
   </div>
 
   {/* jobb oszlop: szöveg */}
-  <section>
+  <section className={styles.infosection}>
     infok Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate esse enim vel ad expedita tempora cupiditate repellat. Voluptas, exercitationem. A aut facilis consequuntur laudantium mollitia eveniet iure ex inventore maiores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsa quos alias deserunt quibusdam reprehenderit rem fugit laboriosam voluptas repellendus ducimus, nam odit illum in commodi voluptate, molestiae tempore neque.
+    <br />
+    <br />
+    <br />
+    <p className={styles.arCimke}>150 000 Ft</p>
+    
   </section>
-  <button className={styles.visszaButton}>kosárba</button>
+  
+  <button className={styles.kosarbaButton}>kosárba</button>
+  
 </div>
 
 
