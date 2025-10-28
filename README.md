@@ -39,8 +39,9 @@ Index -  Teljes Főoldal felépítés - nav bar, hero, sections, footer,
 
 
 JELENLEG FOGLYAMATBAN:  
-- Nav bar css
-- Hero section kialakítás (Ötlet?)
+
+
+
 
 
 -->

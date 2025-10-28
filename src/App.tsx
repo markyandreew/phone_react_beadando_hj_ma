@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 // import Footer from "./components/Footer/Footer";
+import Service from "./pages/Services/Service";
 
 
 //devices
@@ -18,11 +19,12 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/Home" element={<Layout><Home/></Layout>} />
+        <Route path="/Services" element={<Layout><Service /></Layout>} />
+        <Route path="/Devices/first" element={<Layout><FirstDevice /></Layout>} />
+        <Route path="About" element={<Layout><Home/></Layout>} />
+        <Route path="Contact" element={<Layout><Home/></Layout>} />
         <Route path="*" element={<Layout><NotFound /></Layout>} />
-        <Route path="Devices" element={<Layout><Device /></Layout>} />
-
-        
-        <Route path="/devices/first" element={<Layout><FirstDevice /></Layout>} />
+        <Route path="/Devices" element={<Layout><Device /></Layout>} />
 
         
       </Routes>

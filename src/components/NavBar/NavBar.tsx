@@ -1,31 +1,34 @@
 import React from "react";
 import styles from "./NavBar.module.css";
 import logo from "../../logo.svg"
-import { href } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const navItems = [
-    { name: "Kezdőlap", href: "#" },
-    { name: "Készülékek", href: "#devices" },
-    { name: "Rólunk", href: "#about" },
-    { name: "Kapcsolat", href: "#contact" },
+    { name: "Kezdőlap", to: "/home" },
+    { name: "Szolgáltatások", to: "/services" },
+    { name: "Rólunk", to: "/about" },
+    { name: "Kapcsolat", to: "/contact" },
   ];
+
+const navigate = useNavigate();
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarContent}>
         <div className={styles.logo}>
-          <a href="/home">
+          <Link to="/home">
             <img src={logo} alt="Logo" className={styles.logoImage} />
-          </a>
+          </Link>
         </div>
 
         <div className={styles.desktopMenu}>
           {navItems.map((item) => (
-            <a key={item.name} href={item.href} className={styles.menuLink}>
+            <Link key={item.name} to={item.to} className={styles.menuLink}>
               {item.name}
-            </a>
+            </Link>
           ))}
-          <button className={styles.ctaButton}>Termékeink</button>
+            <button className={styles.ctaButton} onClick={() => navigate("/devices")}>Termékeink</button>
         </div>
       </div>
     </nav>

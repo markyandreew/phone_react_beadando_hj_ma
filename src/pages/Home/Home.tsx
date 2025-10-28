@@ -10,6 +10,7 @@ const Home: React.FC = () => {
 
 
   return (
+    <>
     <div className={styles.homeContainer}>
       <div className={styles.homeText}>
         <h1>React Telefonok <br />széles választéka</h1>
@@ -24,6 +25,16 @@ const Home: React.FC = () => {
         <img src={placeholderImage} alt="React Telefonok" />
       </div>
     </div>
+
+    <section className={styles.homeSection1}>
+      <h2>Miért válaszd a React Telefonokat?</h2>
+      <ul>
+        <li>Gyors és zökkenőmentes teljesítmény</li>
+        <li>Modern dizájn és felhasználói élmény</li>
+        <li>Széleskörű alkalmazás támogatás</li>
+      </ul>
+    </section>
+    </>
   );
 };
 
