@@ -1,9 +1,18 @@
-import React from "react";
+import React , {useState} from "react";
 import styles from "./NavBar.module.css";
-import logo from "../../logo.svg"
-import { Link, useNavigate } from "react-router-dom";
 
-const NavBar = () => {
+
+import logo from "../../logo.svg"
+import { Link, useNavigate, } from "react-router-dom";
+
+
+
+const NavBar: React.FC = () => {
+
+
+  const [showCart,setShowCart]=useState(false)
+
+
   const navItems = [
     { name: "Kezdőlap", to: "/home" },
     { name: "Szolgáltatások", to: "/services" },
@@ -30,6 +39,20 @@ const navigate = useNavigate();
           ))}
             <button className={styles.ctaButton} onClick={() => navigate("/devices")}>Termékeink</button>
         </div>
+
+
+
+        {/*KOSÁR*/}
+        <div className={styles.cartIcon} onClick={()=> setShowCart(!showCart)}></div>
+        
+        {/*Legordulo Menu*/}
+        {showCart && (
+          <div className={styles.cartDropdown}>
+            <p>termek1</p>
+            <p>termek2</p>
+            <button className={styles.rendelesButton}>rendelés</button>
+          </div>
+        )}
       </div>
     </nav>
   );
