@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 
+
+
 import styles from "../Devices.module.css";
 
 
@@ -13,6 +15,9 @@ import { useNavigate } from "react-router-dom";
 import device1 from "../../../assets/devices2_1.jpg"
 import device2 from "../../../assets/devices2_2.jpg"
 
+//kosárBahelyezéshez:
+import {UseKosar} from "../../../Kosar/KosarContext"
+
 
 
 
@@ -23,6 +28,24 @@ const FirstDevice: React.FC = () => {
 
     const visszaGomb=useNavigate();
     const [currentImg,setCurrentImg]=useState(device1);
+
+
+
+    //kosár!!
+    const {hozzadKosarhoz} = UseKosar();
+
+    const KosarbaHelyez=()=>{
+      hozzadKosarhoz({
+        nev: "iphone 15 React",
+        ar: 150000,
+      });
+      console.log("a termek a kosarba")
+    };
+    
+
+
+  
+
   return (
   <div>
     <button className={styles.visszaButton} onClick={() => visszaGomb("/Devices")}>vissza</button>
@@ -55,7 +78,7 @@ const FirstDevice: React.FC = () => {
     
   </section>
   
-  <button className={styles.kosarbaButton}>kosárba</button>
+  <button className={styles.kosarbaButton} onClick={KosarbaHelyez} >kosárba</button>
   
 </div>
 

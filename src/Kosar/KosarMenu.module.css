@@ -1,0 +1,87 @@
+.kosarWrapper {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.kosarGomb {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.kosarGomb:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+/* Lenyíló menü */
+.kosarDropdown {
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  padding: 14px;
+  width: 310px;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/*töröl*/
+
+.toromElem{
+    padding: 2px;
+    margin-left: 20px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+}
+
+.toromElem:hover{
+    transform: scale(1.05);
+    background-color: #eb252f;
+    color: aliceblue;
+}
+
+
+.osszeg{
+    border-top: #bac8f8 4px solid ;
+    color: #1e40af;
+    font-weight: bolder;
+}
+
+
+
+.kosarUlLi {
+  margin: 0;      
+  padding-left: 20px; 
+  list-style-position: inside; 
+  padding: 4px;
+}
+
+
+.kosarTartalmah2{
+    color: #6c80c0;
+}

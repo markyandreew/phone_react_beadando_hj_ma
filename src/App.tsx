@@ -8,15 +8,22 @@ import Layout from "./components/Layout/Layout";
 import Service from "./pages/Services/Service";
 
 
+
+
 //devices
 
 import Device from "./pages/Devices/Devices";
 import FirstDevice from "./pages/Devices/DevicesInfo/FirstDevice";
 
+//kosár
+import { KosarProvider } from "./Kosar/KosarContext";
+
 function App() {
   return (
-    <>
+    
       <BrowserRouter>
+      <KosarProvider>
+
       <Routes>
         <Route path="/Home" element={<Layout><Home/></Layout>} />
         <Route path="/Services" element={<Layout><Service /></Layout>} />
@@ -28,8 +35,10 @@ function App() {
 
         
       </Routes>
+
+      </KosarProvider>
     </BrowserRouter>
-    </>
+    
   );
 }
 
