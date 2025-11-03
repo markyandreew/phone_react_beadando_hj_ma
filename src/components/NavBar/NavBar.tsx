@@ -21,7 +21,7 @@ const NavBar: React.FC = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarContent}>
-        {/* 🔹 Logo */}
+        {/*  Logo */}
         <div className={styles.logo}>
           <Link to="/home">
             <img src={logo} alt="Logo" className={styles.logoImage} />

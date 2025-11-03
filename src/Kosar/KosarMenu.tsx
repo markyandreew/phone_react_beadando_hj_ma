@@ -1,10 +1,13 @@
 
 
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, } from "react";
 import styles from "./KosarMenu.module.css"
 
 import { UseKosar } from "./KosarContext";
+import { useNavigate } from "react-router-dom";
+
+
 
 
 
@@ -12,6 +15,12 @@ const KosarMenu: React.FC = () => {
   const [nyitva, setnyitva] = useState(false);
   const { kosarElemek, torolElem } = UseKosar();
   const kosarRef = useRef<HTMLDivElement>(null);
+
+  //Payment
+
+  const fizet=useNavigate();
+
+
 
   const osszeg = kosarElemek.reduce((ossz, elem) => ossz + elem.ar, 0);
 
@@ -29,6 +38,9 @@ const KosarMenu: React.FC = () => {
   }, []);
 
   return (
+
+
+
     <div className={styles.kosarWrapper} ref={kosarRef}>
       <button className={styles.kosarGomb} onClick={() => setnyitva(!nyitva)}>
         Kosár
@@ -57,7 +69,8 @@ const KosarMenu: React.FC = () => {
 
           <p className={styles.osszeg}>Összeg: {osszeg} Ft</p>
 
-          <button>Tovább a pénztárhoz</button>
+          {/*Ez Jenninek Fontos! */}
+          <button onClick={()=>fizet("/Payment")} disabled={kosarElemek.length === 0}>Tovább a pénztárhoz</button>
         </div>
       )}
     </div>

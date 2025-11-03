@@ -7,6 +7,9 @@ import Layout from "./components/Layout/Layout";
 // import Footer from "./components/Footer/Footer";
 import Service from "./pages/Services/Service";
 
+//paymnent
+import Payment from "./pages/Payment/Payment";
+
 
 
 
@@ -32,6 +35,7 @@ function App() {
         <Route path="Contact" element={<Layout><Home/></Layout>} />
         <Route path="*" element={<Layout><NotFound /></Layout>} />
         <Route path="/Devices" element={<Layout><Device /></Layout>} />
+        <Route path="/Payment" element={<Layout> <Payment/></Layout>}></Route>
 
         
       </Routes>
