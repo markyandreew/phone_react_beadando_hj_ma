@@ -167,3 +167,201 @@
   cursor: pointer;
 }
 
+
+.homeSection2 {
+  padding: 3rem 1rem;
+}
+
+@media (min-width: 900px) {
+  .homeSection2 {
+    padding: 6rem 1rem;
+  }
+}
+
+/* --- MAIN CONTAINER --- */
+.featuresContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+@media (min-width: 992px) {
+  .featuresContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* --- LEFT COLUMN --- */
+.featuresLeft {
+  flex: 1;
+}
+
+.featuresTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.featuresText {
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* --- LINK --- */
+.featuresLeft a {
+  display: flex;
+  align-items: center;
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  width: max-content;
+}
+
+.featuresLeft a:hover {
+  color: #0d5fd4;
+}
+
+.arrow-icon {
+  font-size: 1.125rem;
+  margin-left: 6px;
+  transform: translateX(3px);
+  transition: transform 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3);
+}
+
+.featuresLeft a:hover .arrow-icon {
+  transform: translateX(6px);
+}
+
+/* --- RIGHT COLUMN --- */
+.featuresRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* --- FEATURE ITEM --- */
+.featureItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.featureIconBox {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(90deg, #2196f3, #21cbf3);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(33, 150, 243, 0.4);
+  flex-shrink: 0;
+}
+
+.featureDescription {
+  color: rgba(0, 0, 0, 0.7);
+  padding-left: 1rem;
+  line-height: 1.5;
+}
+
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+
+.homeSection3 {
+  padding: 80px 20px;
+  background-color: #f9fafb;
+  text-align: center;
+  position: relative;
+}
+
+/* 🔹 Felső kék elválasztó vonal */
+.homeSection3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  height: 5px;
+  background-color: #007bff;
+  border-radius: 2px;
+}
+
+.homeSection3 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.homeSection3 h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.testimonialsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonialItem {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 30px 25px;
+  flex: 1 1 300px;
+  max-width: 450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonialItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.testimonialText {
+  font-size: 1.1rem;
+  color: #333;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonialAuthor {
+  display: block;
+  font-weight: 600;
+  color: #007bff;
+  font-size: 1rem;
+}

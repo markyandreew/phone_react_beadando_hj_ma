@@ -3,41 +3,51 @@
   display: inline-flex;
   flex-direction: column;
   align-items: flex-end;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
 }
 
+
 .kosarGomb {
-  background-color: #2563eb;
-  color: white;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #fff;
   border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
+  padding: 10px 18px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 .kosarGomb:hover {
-  background-color: #1e40af;
-  transform: scale(1.05);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.45);
+  background: linear-gradient(135deg, #1e40af, #1d4ed8);
 }
 
-/* Lenyíló menü */
+
 .kosarDropdown {
   position: absolute;
-  top: 50px;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  padding: 14px;
-  width: 310px;
-  animation: fadeIn 0.3s ease forwards;
+  top: 60px;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 340px;
+  animation: fadeIn 0.25s ease forwards;
+  z-index: 20;
+  border: 1px solid #e5e7eb;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-8px);
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
@@ -45,43 +55,107 @@
   }
 }
 
-
-
-/*töröl*/
-
-.toromElem{
-    padding: 2px;
-    margin-left: 20px;
-    border: none;
-    background-color: #ddd;
-    cursor: pointer;
-    transition: transform 0.2s;
-
+.kosarTartalmah2 {
+  color: #2563eb;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  border-bottom: 3px solid #93c5fd;
+  padding-bottom: 6px;
+  text-align: left;
 }
 
-.toromElem:hover{
-    transform: scale(1.05);
-    background-color: #eb252f;
-    color: aliceblue;
+.kosarLista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 220px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #93c5fd transparent;
+}
+
+.kosarLista::-webkit-scrollbar {
+  width: 6px;
+}
+
+.kosarLista::-webkit-scrollbar-thumb {
+  background: #93c5fd;
+  border-radius: 3px;
+}
+
+.kosarElem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9fafb;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kosarElem:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.15);
+}
+
+.elemNev {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.elemAr {
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.toromElem {
+  margin-left: 10px;
+  padding: 4px 8px;
+  background-color: #f3f4f6;
+  color: #e45036;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+.toromElem:hover {
+  background-color: #be2424;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(139, 19, 19, 0.4);
+}
+
+.osszeg {
+  border-top: 3px solid #93c5fd;
+  color: #1e3a8a;
+  font-weight: 700;
+  padding-top: 12px;
+  margin-top: 12px;
+  text-align: right;
+  font-size: 1.1rem;
 }
 
 
-.osszeg{
-    border-top: #bac8f8 4px solid ;
-    color: #1e40af;
-    font-weight: bolder;
+.kosarDropdown button {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
 
-
-
-.kosarUlLi {
-  margin: 0;      
-  padding-left: 20px; 
-  list-style-position: inside; 
-  padding: 4px;
-}
-
-
-.kosarTartalmah2{
-    color: #6c80c0;
+.kosarDropdown button:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.4);
 }
