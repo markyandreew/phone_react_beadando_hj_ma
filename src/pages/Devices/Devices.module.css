@@ -1,9 +1,14 @@
 /*Főoldal*/
 .divContainer{
+  width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
+
 }
 
 

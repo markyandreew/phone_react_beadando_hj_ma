@@ -9,7 +9,7 @@ import Service from "./pages/Services/Service";
 
 //paymnent
 import Payment from "./pages/Payment/Payment";
-
+import SuccessPay from "./pages/SuccessPay/SuccessPay";
 
 
 
@@ -36,6 +36,7 @@ function App() {
         <Route path="*" element={<Layout><NotFound /></Layout>} />
         <Route path="/Devices" element={<Layout><Device /></Layout>} />
         <Route path="/Payment" element={<Layout> <Payment/></Layout>}></Route>
+        <Route path="/SuccessPay" element={<Layout><SuccessPay/></Layout>} />
 
         
       </Routes>
