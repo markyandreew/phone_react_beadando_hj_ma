@@ -11,7 +11,7 @@ import KosarMenu from "../../Kosar/KosarMenu"
 const NavBar: React.FC = () => {
   const navItems = [
     { name: "Kezdőlap", to: "/home" },
-    { name: "Szolgáltatások", to: "/services" },
+    // { name: "Szolgáltatások", to: "/services" },
     { name: "Rólunk", to: "/about" },
     { name: "Kapcsolat", to: "/contact" },
   ];

@@ -61,7 +61,7 @@ const Home: React.FC = () => {
           <div className={styles.featuresRight}>
             <div className={styles.featureItem}>
               <div className={styles.featureIconBox}>
-                <span className="material-icons">Ikon helye</span>
+                <span className="material-icons"></span>
               </div>
               <p className={styles.featureDescription}>
                 Legújabb <strong>Apple</strong>, <strong>Samsung</strong> és{" "}
@@ -72,7 +72,7 @@ const Home: React.FC = () => {
 
             <div className={styles.featureItem}>
               <div className={styles.featureIconBox}>
-                <span className="material-icons">Ikon helye</span>
+                <span className="material-icons"></span>
               </div>
               <p className={styles.featureDescription}>
                 <strong>Szakértő csapatunk</strong> segít a megfelelő telefon
@@ -82,7 +82,7 @@ const Home: React.FC = () => {
 
             <div className={styles.featureItem}>
               <div className={styles.featureIconBox}>
-                <span className="material-icons">Ikon helye</span>
+                <span className="material-icons"></span>
               </div>
               <p className={styles.featureDescription}>
                 <strong>Gyors házhoz szállítás</strong> és személyes átvétel is
