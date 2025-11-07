@@ -72,6 +72,8 @@ const Payment: React.FC = () => {
               onChange={(esemeny) => setBankKartya(esemeny.target.value)}
               required
               placeholder="0000-0000-0000-0000"
+              minLength={16}
+              maxLength={16}
             />
           </label>
           <button

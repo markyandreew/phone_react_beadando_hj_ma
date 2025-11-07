@@ -32,6 +32,7 @@ export const KosarProvider : React.FC<{children : React.ReactNode}>=({children }
     //ujelem hozzaadasa
     const hozzadKosarhoz = (ujElem:KosarElem) =>{
         setkosarElemek((elozok) => [...elozok,ujElem]);
+        alert(`${ujElem.nev} hozzáadva a kosárhoz!` )
     };
 
 

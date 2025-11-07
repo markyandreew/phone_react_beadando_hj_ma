@@ -103,5 +103,20 @@ de ha nem tenné meg akkor: http://localhost:3000/Devices- alatt elérhető
 
 javaslom hogy a homePage legyen a nyito lap mármint => app.tsx és
  Lehet hogy jobb lenne  a routes-oknak egy külön mappát létrehozni, és ott megirni minden oldal külön elérhetőségét- h ne az app.tsx-be legyen 
+
+ Device+Fizetés kész! 
+ Figyeltem hogy a fizetésnél a kártyaszámnál min 16 számot kötelező legyen megadni másképpen a fizetés gomb nem müködik.
+
+ Devices: 
+ Készítettem 6 különbözö Terméket +Hozzájuk tartozó útvonalat
+
+ Miután a felhasználó fizetett kiirja a konzolra a megvásárolt terméket és annak a nevet
+
+ Allert ablak ugrik fel ha egy termék a kosárba került. 
+
+
+
  -->
+ 
+
 

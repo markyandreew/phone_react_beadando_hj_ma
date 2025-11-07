@@ -12,8 +12,8 @@ import { useNavigate } from "react-router-dom";
 
 //képek
 
-import device1 from "../../../assets/devices2_1.jpg"
-import device2 from "../../../assets/devices2_2.jpg"
+import device1 from "../../../assets/device2Front.jpg"
+import device2 from "../../../assets/device2Side.jpg"
 
 //kosárBahelyezéshez:
 import {UseKosar} from "../../../Kosar/KosarContext"
@@ -24,7 +24,7 @@ import {UseKosar} from "../../../Kosar/KosarContext"
 
 
 
-const FirstDevice: React.FC = () => {
+const SecDevice: React.FC = () => {
 
     const visszaGomb=useNavigate();
     const [currentImg,setCurrentImg]=useState(device1);
@@ -36,8 +36,8 @@ const FirstDevice: React.FC = () => {
 
     const KosarbaHelyez=()=>{
       hozzadKosarhoz({
-        nev: "React phone 1",
-        ar: 150000,
+        nev: "React phone 2",
+        ar: 250000,
       });
       console.log("a termek a kosarba")
     };
@@ -56,7 +56,7 @@ const FirstDevice: React.FC = () => {
       
   {/* bal oszlop: nagy és kis képek */}
   <div className={styles.balOldal}>
-    <header className={styles.infoHeader}>React phone 1</header>
+    <header className={styles.infoHeader}>React phone 2</header>
     
     <div className={styles.nagyKepContainer}>
       <img src={currentImg} alt="Nagy kep" />
@@ -74,7 +74,7 @@ const FirstDevice: React.FC = () => {
     <br />
     <br />
     <br />
-    <p className={styles.arCimke}>150 000 Ft</p>
+    <p className={styles.arCimke}>250 000 Ft</p>
     
   </section>
   
@@ -89,4 +89,4 @@ const FirstDevice: React.FC = () => {
   ;
 };
 
-export default FirstDevice;
+export default SecDevice;

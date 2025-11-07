@@ -12,10 +12,10 @@ import { useNavigate } from "react-router-dom";
 
 //képek
 
-import device1 from "../../../assets/devices2_1.jpg"
-import device2 from "../../../assets/devices2_2.jpg"
+import device1 from "../../../assets/device6Front.jpg"
+import device2 from "../../../assets/device6Side.jpg"
 
-//kosárBahelyezéshez:
+
 import {UseKosar} from "../../../Kosar/KosarContext"
 
 
@@ -24,7 +24,7 @@ import {UseKosar} from "../../../Kosar/KosarContext"
 
 
 
-const FirstDevice: React.FC = () => {
+const SixthDevice: React.FC = () => {
 
     const visszaGomb=useNavigate();
     const [currentImg,setCurrentImg]=useState(device1);
@@ -36,7 +36,7 @@ const FirstDevice: React.FC = () => {
 
     const KosarbaHelyez=()=>{
       hozzadKosarhoz({
-        nev: "React phone 1",
+        nev: "Realme React 14 pro+",
         ar: 150000,
       });
       console.log("a termek a kosarba")
@@ -56,7 +56,7 @@ const FirstDevice: React.FC = () => {
       
   {/* bal oszlop: nagy és kis képek */}
   <div className={styles.balOldal}>
-    <header className={styles.infoHeader}>React phone 1</header>
+    <header className={styles.infoHeader}>Realme React 14 pro+</header>
     
     <div className={styles.nagyKepContainer}>
       <img src={currentImg} alt="Nagy kep" />
@@ -89,4 +89,4 @@ const FirstDevice: React.FC = () => {
   ;
 };
 
-export default FirstDevice;
+export default SixthDevice;
