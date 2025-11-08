@@ -7,7 +7,7 @@
   margin: 0 auto;
   gap: 40px;
   flex-wrap: wrap;
-  min-height: calc(95vh - 60px);
+  min-height: calc(95vh - 60px); 
 }
 
 .homeText {

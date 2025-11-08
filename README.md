@@ -9,8 +9,7 @@
 
 <!-- JENNI 
 ----------------------------------------------------------------------------------------
-FONTOS: (ezt a részt majd törölheted) - src - components - szekciók mappára bontva, a könnyebb kezelés miatt (README LEGALJÁN MAPPASTRUKTURA)
-tsx és css is van benne,  a css-ekbe bele importáltam a nav-ot és bele fogom tenni a footert is, ugye ez minden oldalon ugyan az. A stylust az index.css-ben a global-ba alakítjuk ki, ezen belül meg majd, ami kell ami az adott oldalon egyedi pl.: telefonok gridbe , de a fő elemek meg ott
+
 
 http://localhost:3000/home   <-------  /HOME  nem sima / , hanem Home az útvonal, amúgy not found page.
 ---------------------------------------------------------------------------------------

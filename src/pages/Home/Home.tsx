@@ -103,13 +103,13 @@ const Home: React.FC = () => {
               "A React Telefonoknál vásároltam a legújabb készülékemet, és
               teljesen elégedett vagyok a szolgáltatással!"
             </p>
-            <span className={styles.testimonialAuthor}>- Kovács Anna</span>
+            <span className={styles.testimonialAuthor}>- Labanc Dániel</span>
           </div>
           <div className={styles.testimonialItem}>
             <p className={styles.testimonialText}>
               "Gyors és megbízható, csak ajánlani tudom!"
             </p>
-            <span className={styles.testimonialAuthor}>- Szabó Péter</span>
+            <span className={styles.testimonialAuthor}>- Joó Edvárd</span>
           </div>
         </div>
       </section>
