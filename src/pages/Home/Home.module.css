@@ -196,7 +196,6 @@
   }
 }
 
-/* --- LEFT COLUMN --- */
 .featuresLeft {
   flex: 1;
 }
@@ -213,7 +212,7 @@
   line-height: 1.6;
 }
 
-/* --- LINK --- */
+
 .featuresLeft a {
   display: flex;
   align-items: center;
@@ -239,7 +238,7 @@
   transform: translateX(6px);
 }
 
-/* --- RIGHT COLUMN --- */
+
 .featuresRight {
   flex: 1;
   display: flex;
@@ -247,7 +246,7 @@
   gap: 1.5rem;
 }
 
-/* --- FEATURE ITEM --- */
+
 .featureItem {
   display: flex;
   align-items: center;
@@ -296,7 +295,7 @@
   position: relative;
 }
 
-/* 🔹 Felső kék elválasztó vonal */
+
 .homeSection3::before {
   content: "";
   position: absolute;
